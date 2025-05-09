@@ -11,21 +11,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1e1e2f;
-    color: white;
+    background-color: #ff6f00;;
+    color:#ffffff;
     padding: 20px 40px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(196, 222, 189, 0.454);
 }
-
-h1 {
-    font-size: 32px;
-    font-family: 'Segoe UI', sans-serif;
-}
-
-nav ul {
-    list-style: none;
-}
-
 li {
     display: inline-block;
     font-size: 18px;
