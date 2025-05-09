@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1e2f;
+    color: white;
+    padding: 20px 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 32px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    font-size: 18px;
+    padding: 5px 15px;
+}
