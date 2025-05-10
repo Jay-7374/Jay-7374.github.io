@@ -11,11 +11,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ff6f00;;
-    color:#ffffff;
-    padding: 20px 40px;
-    box-shadow: 0 4px 8px rgba(196, 222, 189, 0.454);
+    background-color: #ec407a; 
+    color: #fff176;            
+    padding: 30px 50px;
+    box-shadow: 0 4px 10px rgba(236, 64, 122, 0.3);
 }
+
+
+
 li {
     display: inline-block;
     font-size: 18px;
