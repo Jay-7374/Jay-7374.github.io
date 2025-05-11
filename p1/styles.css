@@ -43,9 +43,13 @@ header ul li a {
     color: white;
 }
 header ul li a:hover {
-    text-decoration: underline;
-    color: lightgray;
+    text-decoration: none;
+    color: #ffeb3b;
+    border-bottom: 2px solid white;
+    padding-bottom: 4px;
+    transition: 0.3s ease-in-out;
 }
+
 
 button:hover {
     background-color: darkblue;
@@ -54,15 +58,17 @@ button:hover {
 
 .row {
     display: flex;
-    padding: 22px;
-    justify-content: space-around;
+    justify-content: space-between; 
+    align-items: center;
     flex-wrap: wrap;
+    padding: 30px;
 }
 
+
 .box {
-    width: 500px;
+   width: 48%; 
+    max-width: 500px;
     padding: 30px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 
@@ -77,18 +83,22 @@ button:hover {
 }
 
 button {
-    padding: 9px;
-    background-color: blue;
+    padding: 12px 40px;
+    background: linear-gradient(to right, #007bff, #0056b3);
     color: white;
-    font-size: 14px;
-    border-radius: 4px;
-    width: 100px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
+
 button:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
+    background: linear-gradient(to right, #0056b3, #003c82);
+    transform: scale(1.08);
 }
+
 
 #home {
     background: linear-gradient(to right, #e3f2fd, #ffffff);
@@ -120,22 +130,21 @@ button:hover {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 40px; 
-    margin-top: 30px;
+    gap: 30px;
+    padding: 40px;
 }
 
+
 .project-card {
-    padding: 32px 24px;
-    margin: 20px;
-    background-color: #fff;
-    border: 2px solid #000;
-    border-radius: 24px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 28px 24px;
+    background: linear-gradient(to right, #ffffff, #f5f5f5);
+    border-radius: 16px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
     text-align: center;
-    width: 270px; 
-    flex-shrink: 0; 
+    width: 280px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 .project-card h3 {
     margin-bottom: 12px; 
@@ -149,30 +158,28 @@ button:hover {
 }
 
 .project-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.25);
 }
 
+
 .demo-button {
-    display: block;           
-    margin: 16px auto; 
-    padding: 12px 32px;
-    background-color: #007bff;
+    padding: 10px 26px;
+    background: linear-gradient(to right, #007bff, #0056b3);
     color: white;
     border: none;
-    border-radius: 12px;
-    font-size: 13px;
+    border-radius: 8px;
+    font-size: 14px;
     font-weight: 500;
     cursor: pointer;
-    text-align: center; 
-    width: fit-content; 
-   transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .demo-button:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
+    background: linear-gradient(to right, #0056b3, #003c82);
+    transform: scale(1.08);
 }
+
 
 .section-heading {
     text-align: center;
@@ -183,61 +190,77 @@ button:hover {
 
 .services-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
-    margin: 30px auto;
-    padding: 30px;
-    background-color: #e3f2fd; 
+    gap: 30px;
+    padding: 40px;
+    background: linear-gradient(to right, #e3f2fd, #ffffff);
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+
 .service-card {
-    background-color: #ffffff;
-    border: 2px solid #ccc;
+    background: linear-gradient(to right, #ffffff, #f9f9f9);
     border-radius: 16px;
-    width: 260px;
+    width: 280px;
     padding: 24px;
-    margin: 15px;
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+
 .service-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+
 .about-container {
-    max-width: 700px;
-    margin: 40px auto;
-    padding: 30px;
-    background: linear-gradient(to right, #fff3e0, #ffe0b2); 
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 750px;
+    margin: 50px auto;
+    padding: 35px;
+    background: linear-gradient(to right, #fff9c4, #ffe082); 
+    border-radius: 16px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
     line-height: 1.8;
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
     font-weight: 500;
     color: #333;
 }
 
+.about-container:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+}
+
+.about-container p {
+    padding: 10px;
+    letter-spacing: 0.5px;
+}
+
 .contact-container {
     display: flex;
     justify-content: center;
-    padding: 40px;
+    align-items: center;
+    padding: 50px;
+    background: linear-gradient(to right, #f1f8e9, #dcedc8); 
 }
 
+
 .contact-form {
-    background-color: #fff;
+    background-color: white;
     border-radius: 12px;
-    padding: 30px;
-    box-shadow: 0 0 12px rgba(0,0,0,0.15);
+    padding: 35px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
     width: 100%;
-    max-width: 500px;
+    max-width: 480px;
     text-align: center;
 }
+
 
 .contact-details {
     margin-bottom: 20px; 
@@ -245,24 +268,28 @@ button:hover {
 
 .contact-details p {
     font-size: 18px;
-    margin: 12px 0; 
     font-weight: 500;
     color: #333;
 }
 
+
 .contact-form button {
-    padding: 12px 40px;
-    background-color: #4caf50;
+    padding: 12px 36px;
+    background: linear-gradient(to right, #4caf50, #388e3c);
     color: white;
     border: none;
     border-radius: 6px;
     font-size: 16px;
+    font-weight: 500;
     cursor: pointer;
-    display: block;
-    width: fit-content;
-    margin: 20px auto; 
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
+
+.contact-form button:hover {
+    background: linear-gradient(to right, #388e3c, #2e7d32);
+    transform: scale(1.08);
+}
+
 
 .contact-form button:hover {
     background-color: #45a049;
