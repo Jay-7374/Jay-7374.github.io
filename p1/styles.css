@@ -421,3 +421,13 @@ button:hover {
     transform: scale(1.1); 
 }
 
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    border-top: 2px solid #16a085;
+}
+
+
