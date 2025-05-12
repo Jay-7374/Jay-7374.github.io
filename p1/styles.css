@@ -66,10 +66,41 @@ header ul li a:hover {
 }
 
 
-button:hover {
-    background-color: darkblue;
-    cursor: pointer;
+
+.show-less-btn {
+    display: none;
 }
+
+.hidden-section {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease-out, opacity 0.6s ease-out;
+    background: linear-gradient(to right, #f8f9fa, #ffffff); 
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    width: 70%;
+    margin: 20px auto;
+    transform: translateY(20px);
+}
+
+#hiddenSection:target {
+    max-height: 500px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#hiddenSection:target ~ .know-more-btn {
+    display: none;
+}
+
+
+#hiddenSection:target .show-less-btn {
+    display: inline-block;
+}
+
+
 
 .row {
     display: flex;

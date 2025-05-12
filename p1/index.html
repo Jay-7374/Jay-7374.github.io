@@ -34,7 +34,27 @@
                 responsive design, optimized performance, and dynamic UI interactions, I transform ideas into 
                 powerful, scalable applications.
             </p><br>
-            <button>Know More</button>
+ <button class="know-more-btn" onclick="window.location='#hiddenSection'">Know More</button>
+<button class="show-less-btn" onclick="window.location='#'">Show Less</button>
+    <div id="hiddenSection" class="hidden-section">
+        <h2> About Me</h2>
+        <p>Hello! I'm Jaya Prakash, a passionate web developer specializing in CSS, responsive design, and interactive UI elements.</p>
+
+        <h3> My Tech Stack</h3>
+        <ul>
+            <li>Front-end: HTML, CSS (animations, hover effects, transitions), JavaScript</li>
+            <li>Full-stack: MERN (MongoDB, Express.js, React.js, Node.js)</li>
+        </ul>
+
+        <h3> My Work Process</h3>
+        <ul>
+            <li> Planning & Wireframing : Creating a structured layout for clarity.</li>
+            <li> Responsive Design : Ensuring smooth adaptability across devices.</li>
+            <li> Interactive Elements : Adding hover effects, transitions, modals for engagement.</li>
+            <li> Performance Optimization : Ensuring fast load times & accessibility.</li>
+        </ul>
+        <button class="show-less-btn" onclick="window.location='#'">Show Less</button>
+    </div>
         </div>
         <div class="box">
             <img src="goku.png" alt="Developer Profile">
@@ -122,7 +142,9 @@
                 <p><i class="fas fa-envelope"></i> Email: user421050@gmail.com</p>
                 <p><i class="fas fa-phone"></i> Phone: 9949777279</p>
             </div>
-            <button type="submit">Send Message</button>
+            <a href="mailto:user421050@gmail.com" target="_blank">
+    <button type="button">Send Message</button>
+</a>
             <div class="social-links"> 
                 <a href="https://www.linkedin.com/in/jayaprakash-v-0a20682a2?" target="_blank">
                     <i class="fab fa-linkedin"></i>
