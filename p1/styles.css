@@ -360,7 +360,7 @@ button:hover {
     background-color: white;
     border-radius: 16px;
     padding: 40px;
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
     width: 100%;
     max-width: 500px;
     text-align: center;
@@ -371,7 +371,7 @@ button:hover {
 }
 
 .contact-details p {
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 500;
     color: #333;
     display: flex;
@@ -384,7 +384,45 @@ button:hover {
     color: #4caf50;
 }
 
-.contact-form button {
+.contact-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-inputs input,
+.contact-inputs textarea {
+    background: #ffffff;
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #4caf50;
+    border-radius: 10px;
+    font-size: 17px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-inputs input::placeholder,
+.contact-inputs textarea::placeholder {
+    font-size: 16px;
+    color: #777; 
+}
+
+.contact-inputs input:focus,
+.contact-inputs textarea:focus {
+    border-color: #388e3c;
+    outline: none;
+    transform: scale(1.02);
+}
+
+.contact-inputs textarea {
+    resize: none;
+}
+
+.contact-inputs button {
+    margin-top: 12px;
     padding: 12px 40px;
     background: linear-gradient(to right, #4caf50, #388e3c);
     color: white;
@@ -397,11 +435,31 @@ button:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-.contact-form button:hover {
+.contact-inputs button:hover {
     background: linear-gradient(to right, #388e3c, #2e7d32);
     transform: scale(1.05);
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
 }
+
+.button-container {
+    display: flex;
+    justify-content: center; 
+    gap: 15px; 
+    margin-top: 20px;
+}
+
+.button-container button {
+    flex: 1; 
+    max-width: 250px; 
+    padding: 14px 50px;
+}
+
+.button-container button:hover {
+    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.3); 
+    transform: scale(1.05);
+}
+
+
 
 .social-links {
     display: flex;
