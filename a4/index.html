@@ -1,54 +1,45 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook</title>
+  <meta charset="UTF-8">
+  <title>Create a new account</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>facebook</h1>
-  <form action="#" method="post">
-    <label>First name</label><br>
-    <input type="text" name="first_name" required><br><br>
-    <label>Surname</label><br>
-    <input type="text" name="surname" required><br><br>
-    <label>Date of birth</label><br>
-    <select name="day" required>
-      <option value="">Day</option>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-    </select>
-    <select name="month" required>
-      <option value="">Month</option>
-      <option value="January">January</option>
-      <option value="February">February</option>
-      <option value="March">March</option>
-      <option value="April">April</option>
-    </select>
-    <select name="year" required>
-      <option value="">Year</option>
-      <option value="2025">2025</option>
-      <option value="2024">2024</option>
-      <option value="2023">2023</option>
-      <option value="2022">2022</option>
-    </select>
-    <br><br>
-    <label>Gender</label><br>
-    <input type="radio" name="gender" value="female"> Female
-    <input type="radio" name="gender" value="male"> Male
-    <input type="radio" name="gender" value="custom"> Prefer not to Say<br><br>
-    <label>Phone Number</label><br>
-<input type="tel" name="phone" required><br><br>
-    <label>email address</label><br>
-    <input type="email" name="email" required><br><br>
-    <label>Enter password</label><br>
-    <input type="password" name="password" required><br><br>
-    <label>Enter password again</label><br>
-    <input type="password" name="newpassword" required><br><br>
-    <button type="submit">Sign Up</button>
-  </form>
-  <p><a href="#">Already have an account?</a></p>
+  <div class="container">
+    <h1 class="logo">facebook</h1>
+    <div class="form-box">
+      <h2>Create a new account</h2>
+      <p>It's quick and easy.</p>
+      <form>
+        <div class="name-row">
+          <input type="text" placeholder="First name" required>
+          <input type="text" placeholder="Surname" required>
+        </div>
+
+        <label>Date of birth</label>
+        <div class="dob-row">
+          <select id="day"></select>
+          <select id="month"></select>
+          <select id="year"></select>
+        </div>
+
+        <label>Gender</label>
+        <div class="gender-row">
+          <label><input type="radio" name="gender" value="Female"> Female</label>
+          <label><input type="radio" name="gender" value="Male"> Male</label>
+          <label><input type="radio" name="gender" value="Custom"> Custom</label>
+        </div>
+
+        <input type="text" placeholder="Mobile number or email address" required>
+        <input type="password" placeholder="New password" required>
+
+        <button type="submit" class="signup-btn">Sign Up</button>
+      </form>
+      <a href="#">Already have an account?</a>
+    </div>
+  </div>
+  <script src="arth.js"></script>
 </body>
 </html>
