@@ -152,7 +152,7 @@ button:hover {
 
 .box img {
     width: 100%;
-    max-width: 500px; 
+    max-width: 450px; 
     height: auto;
     border-radius: 12px;
     transition: transform 0.4s ease-in-out;
