@@ -1,37 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Simple Form</title>
-  <style>
-    input, button {
-      display: block;
-      margin: 10px 0;
-      padding: 8px;
-      font-size: 16px;
-    }
-    hr {
-      margin: 20px 0;
-    }
-    #output {
-      font-weight: bold;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <input type="text" id="email" placeholder="Enter email">
-  <input type="password" id="password" placeholder="Enter password">
-  <button onclick="submitForm()">Submit</button>
-
-  <hr>
-
-  <div id="output"></div>
+  <div class="container">
+    <h2>Login</h2>
+    <input type="text" id="email" placeholder="Enter email">
+    <input type="password" id="password" placeholder="Enter password">
+    <button onclick="submitForm()">Submit</button>
+    <div class="output" id="output"></div>
+  </div>
 
   <script>
     function submitForm() {
-      const email = document.getElementById('email').value;
-      const password = document.getElementById('password').value;
-      document.getElementById('output').textContent = `${email},${password}`;
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value.trim();
+      const outputElement = document.getElementById('output');
+
+      if (!email || !password) {
+        outputElement.textContent = "Please enter both email and password!";
+        outputElement.classList.add("error");
+        return;
+      }
+
+      outputElement.innerHTML = `<strong>Email:</strong> ${email} <br> <strong>Password:</strong> ${password}`;
+      outputElement.classList.remove("error");
+      outputElement.classList.add("show-output");
     }
   </script>
 

@@ -1,65 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Integer Calculator</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-    }
-    input, button {
-      width: 150px;
-      padding: 5px;
-      margin: 5px;
-    }
-    .buttons {
-      display: flex;
-      justify-content: center;
-    }
-    button {
-      width: 40px;
-    }
-    .output {
-      margin-top: 10px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h2>Calculator</h2>
-  <input type="text" id="num1" placeholder="First number">
-  <input type="text" id="num2" placeholder="Second number">
-  
-  <div class="buttons">
-    <button onclick="calculate('+')">+</button>
-    <button onclick="calculate('-')">-</button>
-    <button onclick="calculate('*')">×</button>
-    <button onclick="calculate('/')">÷</button>
+  <div class="container">
+    <h2>Calculator</h2>
+    <input type="text" id="num1" placeholder="First number">
+    <input type="text" id="num2" placeholder="Second number">
+    
+    <div class="buttons">
+      <button onclick="calculate('+')">+</button>
+      <button onclick="calculate('-')">-</button>
+      <button onclick="calculate('*')">×</button>
+      <button onclick="calculate('/')">÷</button>
+    </div>
+    
+    <div class="output" id="output"></div>
   </div>
-  
-  <div class="output" id="output"></div>
 
-  <script>
-    function calculate(operation) {
-      const num1 = +document.getElementById('num1').value;
-      const num2 = +document.getElementById('num2').value;
-
-      if (isNaN(num1) || isNaN(num2)) {
-        document.getElementById('output').innerHTML = "Invalid input!";
-        return;
-      }
-
-      let result;
-      switch (operation) {
-        case '+': result = num1 + num2; break;
-        case '-': result = num1 - num2; break;
-        case '*': result = num1 * num2; break;
-        case '/': result = num2 !== 0 ? Math.floor(num1 / num2) : "Cannot divide by zero"; break;
-      }
-
-      document.getElementById('output').innerHTML = `Result: ${result}`;
-    }
-  </script>
-
+  <script src="script.js"></script>
 </body>
 </html>
