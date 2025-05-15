@@ -152,7 +152,7 @@ button:hover {
 
 .box img {
     width: 100%;
-    max-width: 500px; 
+    max-width: 450px; 
     height: auto;
     border-radius: 12px;
     transition: transform 0.4s ease-in-out;
@@ -188,7 +188,7 @@ button:hover {
     border-radius: 16px;
     box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
     text-align: center;
-    width: 300px;
+    width: 250px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
