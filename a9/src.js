@@ -7,6 +7,7 @@ const checkAvailability = () => {
   fruits.includes(input)
     ? result.textContent = `${input} is available!`
     : result.textContent = `${input} is not available!!`;
+     result.classList.add("show-result");
 };
 
 document.getElementById("checkBtn").addEventListener("click", checkAvailability);

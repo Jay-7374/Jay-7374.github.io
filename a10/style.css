@@ -113,3 +113,19 @@ body {
 .add-btn:hover {
   background-color: #218838;
 }
+
+.delete-btn {
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
