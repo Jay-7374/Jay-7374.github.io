@@ -4,13 +4,6 @@ const products = [
 {id : 3,name : "Product 3", price : 300} 
 ]
 
-const updatedProducts = products.map(product => ({
-    product,price: product.price + 5
-}));
- 
-updatedProducts.forEach(product => {
-    console.log(product.name + " " + product.price);
-});
 
    
 
