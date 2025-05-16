@@ -40,6 +40,16 @@ body:hover {
   text-shadow: 4px 4px 12px rgba(255, 255, 255, 0.8);
 }
 
+@media (min-width: 1025px) {
+  body {
+    background: linear-gradient(to right, #FFECB3, #FFD54F); 
+  }
+
+  body:hover {
+    background: linear-gradient(to right, #FFC107, #FFA000); 
+  }
+}
+
 @media (max-width: 1024px) and (min-width: 601px) {
   body {
     background: linear-gradient(to right, #C8E6C9, #A5D6A7);
