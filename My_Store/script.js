@@ -16,7 +16,7 @@ const addToCart = (id) => {
     const messageDiv = document.createElement("div");
     messageDiv.textContent = `${product.name} added to cart!`;
     messageDiv.style.position = "fixed";
-    messageDiv.style.top = "20px";
+    messageDiv.style.bottom = "20px";
     messageDiv.style.right = "20px";
     messageDiv.style.background = "#4caf50";
     messageDiv.style.color = "#fff";
@@ -26,7 +26,7 @@ const addToCart = (id) => {
     document.body.appendChild(messageDiv);
     setTimeout(() => {
         document.body.removeChild(messageDiv);
-    }, 700);
+    }, 1500);
 };
 
 
@@ -48,6 +48,7 @@ const decrement = (id) => {
 
 const displayCart = () => {
     let str = "<h2>Cart</h2>";
+    let total = 0;
 
     if (Object.keys(cart).length === 0) {
         str += "<p>Your cart is empty.</p>";
@@ -55,19 +56,24 @@ const displayCart = () => {
         str += '<div class="cart-list">';
         products.forEach((product) => {
             if (cart[product.id]) {
+                let itemTotal = product.price * cart[product.id];
+                total += itemTotal;
                 str += `<div class="cart-item">
                     ${product.name} - $${product.price}
                     <button onclick='decrement(${product.id})'>-</button>
                     ${cart[product.id]}
                     <button onclick='increment(${product.id})'>+</button>
-                    = $${product.price * cart[product.id]}
+                    = $${itemTotal}
                 </div>`;
             }
         });
         str += "</div>";
+
+        str += `<h3>Total Cost: $${total}</h3>`;
     }
     root.innerHTML = str;
 };
+
 
 
 const showProducts = () => {
