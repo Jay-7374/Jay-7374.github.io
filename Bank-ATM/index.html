@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank ATM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="atm-box">
+        <h1>Bank ATM</h1>
+        <hr>
+        <input type="text" id="cardNumber" placeholder="Enter Card Number" required>
+        <input type="password" id="pin" placeholder="Enter PIN" required>
+        <button id="submitBtn">Submit</button>
+        <p id="errorMsg"></p>
+    </div>
+
+    <div id="welcomeBox" class="welcome-box hidden">
+        <h2>Welcome, <span id="userName"></span>!</h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
