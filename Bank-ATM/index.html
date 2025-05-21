@@ -12,12 +12,38 @@
         <hr>
         <input type="text" id="cardNumber" placeholder="Enter Card Number" required>
         <input type="password" id="pin" placeholder="Enter PIN" required>
-        <button id="submitBtn">Submit</button>
+        <button id="submitBtn">Login</button>
         <p id="errorMsg"></p>
     </div>
 
     <div id="welcomeBox" class="welcome-box hidden">
         <h2>Welcome, <span id="userName"></span>!</h2>
+        <p class="balance-text">Total Balance: <span id="balanceAmount">$0</span></p>
+
+        <div class="transaction-section">
+    <div class="transaction">
+        <select id="transactionType" onchange="toggleTransactionFields()">
+            <option value="">Select Transaction</option>
+            <option value="deposit">Deposit</option>
+            <option value="withdraw">Withdraw</option>
+            <option value="transfer">Transfer Money</option>
+        </select>
+    </div>
+
+    <div id="amountField" class="hidden">
+        <input type="number" id="transactionAmount" placeholder="Enter amount">
+    </div>
+
+    <div id="transferField" class="hidden">
+        <input type="text" id="transferAccount" placeholder="Enter account number">
+    </div>
+
+    <button id="transactionSubmitBtn" class="hidden" onclick="handleTransaction()">Submit</button>
+
+</div>
+
+
+        <button class="logout-btn" onclick="logout()">Logout</button>
     </div>
 
     <script src="script.js"></script>
